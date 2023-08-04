@@ -1,0 +1,577 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+:root {
+  --padding-container: 100px 0;
+  --color-title: #001a49;
+}
+
+body {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: var(--padding-contenedor);
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  min-height: 400px;
+  max-height: 500px;
+  margin:0 auto;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%),
+    url("../img/licor.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.nav {
+  padding: 0 20px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.nav__container{
+  position:fixed;
+  font-size: 1.1rem;
+  width:100%;
+  height:5rem;
+  background-color: #100a15;
+  overflow:hidden;
+  border-radius: 0;
+  opacity: 1;
+  z-index: 1;
+}
+
+.nav__title {
+  font-family: 'Berkshire Swash', cursive;
+  font-weight: 300;
+  color: #fecd41;
+  padding: 20px;
+  text-shadow: rgb(6, 6, 6) 0 2px 0;
+}
+
+.nav__link {
+  margin-left: auto;
+  padding: 20px;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav__links:hover{
+  box-shadow: 0 0 10px #666;
+}
+
+.nav__item {
+  list-style: none;
+}
+
+.nav__links {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.nav__menu {
+  margin-left: auto;
+  cursor: pointer;
+  display: none;
+}
+
+.nav__img {
+  display: block;
+  width: 30px;
+}
+
+.nav__logo{
+  font-size: 1.4rem;
+}
+
+.hero__container {
+  width: 100%;
+  --padding-container: 0;
+  display: grid;
+  grid-auto-rows: max-content;
+  align-content: center;
+  gap: 1em;
+  text-align: center;
+  background-color: #100a15;
+}
+
+.hero__title {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: #F2B441;
+}
+
+.hero__paragraph {
+  margin-bottom: 20px;
+  color: #FCF9EA;
+}
+
+.cta {
+  display: inline-block;
+  background-color: #fecd41;
+  justify-self: center;
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 1.3rem;
+  border-style: solid;
+  border-color: #100a15;
+}
+
+.cta:hover{
+  box-shadow: 0 0 10px;
+  scale: 1.05;
+  transition: 0.5s;
+}
+
+/* About */
+
+.about {
+  text-align: center;
+  overflow: hidden;
+  font-size: 1em;
+}
+
+.subtitle {
+  font-family: 'Berkshire Swash', cursive;
+  color: #fecd41;
+  background-color: #100a15;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.container__about {
+  display: grid;
+  justify-items: center;
+  margin-bottom: 30px;
+}
+
+/* Acerca de nosotros */
+
+.Nosotros{
+  text-align: center;
+  background-image: radial-gradient(
+    #dcb433 0.8500000000000001px,
+    #fcf9ea 0.8500000000000001px
+  );
+  background-size: 17px 17px;
+  margin-bottom: 30px;
+}
+
+.aboutUs{
+  display:grid;
+  grid-template-columns: 2fr 2fr;
+  gap:2em;
+  padding: 30px;
+  padding-right: 0;
+  align-items: center;
+}
+
+.about__image{
+  width:100%;
+  padding: 20px;
+  padding-left: 0;
+  overflow: hidden;
+  justify-self: center;
+}
+
+.nosotros__paragraph{
+font-family: 'Poppins', sans-serif;
+font-size: 1.7em;
+text-align: justify;
+}
+
+@media screen and (max-width:900px){
+  .aboutUs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .nosotros__paragraph{
+    font-size: 1.3em;
+  }
+}
+
+/* Productos */
+
+/*ORDEN: MORA, MARACUYÁ, ARÁNDANO*/
+/*ORDEN: PRIMERO CREMA BOTELLAS, CREMAS POUCH 500ML, CREMAS POUCH 250 ML, LUEGO JUGOS CON MEZCAL CON PLATA COMESTIBLE. ORDEN ARRIBA*/
+
+/*CREMAS (BOTELLAS Y POUCH 500ml Y 250ml) Y JUGOS (BOTELLAS Y POUCH 500ml Y 250ml) */
+/*ORDEN: MORA, MARACUYÁ, ARÁNDANO*/
+
+.products {
+  display:block;
+  text-align: center;
+  opacity: 1;
+  width:100%;
+  overflow: hidden;
+  background-color: #ffffff;
+  background-image: radial-gradient(
+    #dcb433 0.8500000000000001px,
+    #fcf9ea 0.8500000000000001px
+  );
+  background-size: 17px 17px;
+  border-radius: 0;
+  margin-bottom: 30px;
+}
+
+.subtitle2 {
+  color: #100a15;
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 25px;
+  padding: 40px;
+  margin-top: 20px;
+}
+
+.product__title{
+  font-family: 'Berkshire Swash', cursive;
+  letter-spacing: 1px;
+  font-weight: 90;
+  font-size: 1.2em;
+}
+
+.products__cremas {
+  padding: 10px;
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  gap: 1em;
+  overflow: hidden;
+  grid-template-columns: repeat(3, 1fr);
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width:700px){
+
+  .products__cremas .products__images:nth-child(4){
+      grid-column: 1 / span 3;
+      justify-self: center;
+      width:23%;
+  }
+
+}
+
+
+.products__jugos {
+  padding: 10px;
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  gap: 1em;
+  overflow: hidden;
+  grid-template-columns: repeat(3, 1fr);
+  flex-wrap: wrap;
+}
+
+
+.products__pouch {
+  padding: 10px;
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  gap: 1em;
+  overflow: hidden;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+
+@media screen and (max-width:700px){
+  .products__cremas,
+  .products__jugos,
+  .products__pouch,
+  .shops__images{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .products__jugos .products__images:nth-child(3){
+    grid-column: 1 / span 2;
+    justify-self: center;
+    width:40%;
+  }
+
+}
+
+.products__images {
+  display: grid;
+  gap: 0.3em;
+  justify-items: center;
+  width: 70%;
+  min-width: 100px;
+  max-width: 260px;
+  grid-template-rows: 1fr, 1fr;
+  border: 2px solid #100a15;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.products__images:hover {
+  box-shadow: 0 0 10px #666;
+  scale: 1.05;
+  transition: 0.2s;
+  background-color: #fecd41;
+}
+
+.product__image {
+  width: 80%;
+  display: block;
+  margin-bottom: 10px;
+  align-items: center;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.product__paragraph {
+  margin-bottom: 10px;
+}
+
+.cta2 {
+    display: inline-block;
+    background-color: #000000;
+    justify-self: center;
+    text-align: center;
+    vertical-align: middle;
+    color: #fecd41;
+    text-decoration: none;
+    width:90%;
+    height:80%;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+/* Tiendas */
+
+.shops {
+  text-align: center;
+  width:100%;
+  background-color: #e5e5f7;
+  background-image: radial-gradient(
+    #dcb433 0.8500000000000001px,
+    #fcf9ea 0.8500000000000001px
+  );
+  background-size: 20px 20px;
+  overflow: hidden;
+  margin:0 auto;
+  margin-bottom: 20px;
+}
+
+.shops__main {
+  padding: 15px;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  gap: 1em;
+  justify-content: center;
+  grid-template-columns: repeat(5, 1fr);
+  overflow: hidden;
+}
+
+.shops__body{
+  align-self: center;
+  justify-self: center;
+}
+
+.shops__image {
+  width: 150px;
+  border-radius: 20px;
+  display: block;
+  overflow:hidden;
+  opacity: 0.8;
+}
+
+#mc_image{
+  z-index: 100;
+  opacity: 1;
+}
+
+
+@media screen and (max-width:850px) and (min-width:501px){
+  .shops__main{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width:500px) and (min-width:320px){
+  .shops__main{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* Contacto */
+/*TODO VÍA WHATSAPP*/
+
+.footer{
+  background-color: #100a15;
+  opacity:0.9;
+  max-width: 100%;
+}
+
+.footer__title{
+  font-family: 'Berkshire Swash', cursive;
+  font-weight: 300px;
+  color: #fecd41;
+  padding: 10px;
+  text-shadow: rgb(6, 6, 6) 0 2px 0;
+  margin-bottom: 30px;
+}
+
+
+.footer__container{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #F2B441;
+  padding: 50px;
+}
+
+.nav--footer{
+  margin-bottom: 20px;
+  display:grid;
+  gap: 1 em;
+  grid-auto-flow: row;
+  height:100%;
+}
+
+.nav__link--footer{
+  display:flex;
+  margin:0;
+  margin-right: 20px;;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.footer__form{
+  padding:20px;
+  color: #fecd41;
+}
+
+.footer__copy{
+  text-align: center;
+}
+
+.footer__copyright{
+  padding:10px 10px 20px 10px;
+  color: #FCF9EA;
+}
+
+.footer__img{
+  margin-top: 15px;
+  margin-right: 10px;
+  width: 40px;
+}
+
+.footer__submit{
+  display: inline-block;
+  background-color: #fecd41;
+  justify-self: center;
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  border-style: solid;
+  border-color: #100a15;
+  cursor: pointer;
+}
+
+.footer__input{
+  padding:20px 100px 20px 20px;
+  border-radius: 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+::placeholder {
+  text-align: left;
+  color: black;
+  font-size: 1em;
+  letter-spacing: 4px;
+}
+
+.footer__contacto{
+  padding-bottom: 20px;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.nav__links__footer {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+}
+
+/*Menú hamburguesa para móviles*/
+
+@media screen and (max-width:767px){
+  .nav__menu{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .nav__menu.open {
+    transform: rotate(-90deg);
+  }
+
+  .nav__link--menu{
+    position:fixed;
+    background-color: #100a15;
+    top:80px;
+    left:0;
+    height: 100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 100;
+    opacity:0;
+    pointer-events: none;
+  }
+
+  .nav__link--show{
+    --show: block;
+    opacity: 1;
+    pointer-events:unset;
+    height:50%;
+    transform: translateY(0);
+  }
+}
