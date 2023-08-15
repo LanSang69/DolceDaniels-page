@@ -497,8 +497,14 @@ text-align: justify;
   width: 40px;
 }
 
+.footer__inputs{
+  display:flex;
+  flex-wrap: wrap;
+}
+
 .footer__submit{
   display: inline-block;
+  margin-top:5px;
   background-color: #fecd41;
   justify-self: center;
   color: black;
@@ -512,13 +518,13 @@ text-align: justify;
 }
 
 .footer__input{
-  padding:20px 100px 20px 20px;
+  padding:10px 3vw 10px 3vw;
   border-radius: 10px;
   font-family: 'Courier New', Courier, monospace;
 }
 
 ::placeholder {
-  text-align: left;
+  text-align: center;
   color: black;
   font-size: 1em;
   letter-spacing: 4px;
