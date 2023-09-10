@@ -6,17 +6,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Página Principal</title>
+
+  <!-- Importación de hojas de estilo CSS y scripts externos -->
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
   <link rel="stylesheet" href="./css/normalize.css" />
   <link rel="stylesheet" href="./css/estilos.css" />
 </head>
 
 <body>
+    <!-- Sección de encabezado -->
   <header class="hero" id="inicio">
     <nav class="nav container nav__container">
       <div class="nav__logo">
         <h2 class="nav__title">Dolce Daniel's</h2>
       </div>
 
+        <!-- Menú de navegación -->
       <ul class="nav__link nav__link--menu">
         <li class="nav__item">
           <a href="#inicio" class="nav__links">Inicio</a>
@@ -39,9 +48,10 @@
         <img src="./img/menu.svg" class="nav__img" />
       </div>
     </nav>
-
+      <!-- Menú de tipo hamburguesa -->
     <script src="./js/menuDesplegable.js"></script>
 
+      <!-- Sección principal. Presentación de la página -->
     <section class="hero__container container">
       <h1 class="hero__title">Crema de Whisky originaria de México</h1>
       <p class="hero__paragraph">
@@ -55,19 +65,40 @@
     <section class="Nosotros" id="nosotros">
       <h2 class="subtitle">¿Quiénes somos?</h2>
       <div class="aboutUs">
-        <p class="nosotros__paragraph">Somos una empresa 100% mexicana con presencia en # restaurantes alrededor
-          de toda la república mexicana.<br><br>Dolce Daniel's es un producto orgánico y natural elaborado a base
-          de Whisky Escoces, furtas naturales y azúcar natural de maguey.<br><br>Lorem ipsum dolor sit amet consectetur
-          adipisicing elit.
+        <ul class="description">
+          <li class="icon">
+            <a href="#" class="aboutUs__icons"><img src="./img/alfiler.png" class="footer__img"></a>
+            <p class="icon__text">Completamente Mexicana</p>
+          </li>
+          <li class="icon">
+            <a href="#" class="aboutUs__icons"><img src="./img/alfiler.png" class="footer__img"></a>
+            <p class="icon__text">Otro texto de cualidad</p>
+          </li>
+          <li class="icon">
+            <a href="#" class="aboutUs__icons"><img src="./img/alfiler.png" class="footer__img"></a>
+            <p class="icon__text">Otro texto de cualidad</p>
+          </li>
+        </ul>
+        <p class="nosotros__paragraph">
+          Desde su fundación el 13 de agosto de 2013, <strong>Dolce Daniel's</strong> ha redefinido la industria con su visión audaz y sus
+          productos excepcionales. Lo que comenzó como una empresa de crema de mezcal ha evolucionado en un
+          verdadero fenómeno culinario. Nuestra pasión por crear experiencias únicas nos ha llevado más allá,
+          expandiéndonos a través de renombrados restaurantes a lo largo de la República y plataformas como Mercado Libre, donde compartimos
+          nuestro amor por los sabores auténticos con una comunidad cada vez mayor. A lo largo de los años, hemos tejido
+          una historia de excelencia que sigue evolucionando, invitando a todos a unirse a nuestro viaje de
+          descubrimiento y deleite.
         </p>
-        <img src="./img/licor.jpg" class="about__image">
       </div>
     </section>
 
+      <!-- Sección de productos -->
     <section class="container products" id="productos">
       <div class="productos products__hidden">
         <h2 class="subtitle">Nuestros Productos</h2>
         <h3 class="subtitle2">Dolce Daniel's Cremas de Whisky</h3>
+        <p class="nosotros__paragraph">
+          
+        </p>
 
         <div class="products__cremas">
           <article class="products__images">
@@ -222,6 +253,8 @@
       </div>
     </section>
 
+      <!-- Compendio de tiendas -->
+
     <section class="container shops" id="shops">
       <h2 class="subtitle">Encuentranos en: </h2>
       <div class="shops__main container">
@@ -320,6 +353,8 @@
     </section>
   </main>
 
+    <!-- Script para comunicarse via whatsapp -->
+
   <script src="./js/mensajeWhatsapp.js"></script>
 
   <footer class="footer" id="contacto">
@@ -339,28 +374,25 @@
           <li class="nav__item">
             <a href="#shops" class="nav__links__footer">Tiendas</a>
           </li>
-          <li class="nav__item">
-            <a href="#contacto" class="nav__links__footer">Contacto</a>
-          </li>
       </nav>
 
       <div class="footer_escribenos">
-      <form class="footer__form">
-        <h2 class="footer__contacto">Escríbenos</h2>
-        <div class="footer__inputs">
-          <textarea placeholder="Mensaje:" class="footer__input" id="mensajeInput"></textarea>
-          <input type="submit" value="Enviar" class="footer__submit" id="enviarButton">
-        </div>
-      </form>
+        <form class="footer__form">
+          <h3 class="footer__contacto">Escríbenos</h3>
+          <div class="footer__inputs">
+            <textarea class="footer__input" id="mensajeInput"></textarea>
+            <input type="submit" value="Enviar" class="footer__submit" id="enviarButton">
+          </div>
+        </form>
       </div>
     </section>
 
     <section class="footer__copy container">
       <div class="footer__social">
-        <a href="https://www.facebook.com/DOLCEDANIELS28" class="footer__icons"><img src="./img/facebook.svg"
+        <a href="https://www.facebook.com/DOLCEDANIELS28" target="_blank" class="footer__icons"><img src="./img/facebook.svg"
             class="footer__img"></a>
-        <a href="#" class="footer__icons"><img src="./img/instagram.svg" class="footer__img"></a>
-        <a href="https://listado.mercadolibre.com.mx/_CustId_278666819" class="footer__icons"><img src="./img/ml.svg"
+        <a href="#" class="footer__icons"><img src="./img/instagram.svg" target="_blank" class="footer__img"></a>
+        <a href="https://listado.mercadolibre.com.mx/_CustId_278666819" target="_blank" class="footer__icons"><img src="./img/ml.svg"
             class="footer__img"></a>
       </div>
 
