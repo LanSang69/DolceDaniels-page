@@ -1,125 +1,136 @@
 <!DOCTYPE html>
 <html lang="esp">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Página Principal</title>
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/estilos.css" />
-  </head>
 
-  <body>
-    <header class="hero" id="inicio">
-      <nav class="nav container nav__container">
-        <div class="nav__logo">
-          <h2 class="nav__title">Dolce Daniel's</h2>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Página Principal</title>
 
-        <ul class="nav__link nav__link--menu">
-          <li class="nav__item">
-            <a href="#inicio" class="nav__links">Inicio</a>
+  <!-- Importación de hojas de estilo CSS y scripts externos -->
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/estilos.css" />
+</head>
+
+<body>
+    <!-- Sección de encabezado -->
+  <header class="hero" id="inicio">
+    <nav class="nav container nav__container">
+      <div class="nav__logo">
+        <h2 class="nav__title">Dolce Daniel's</h2>
+      </div>
+
+        <!-- Menú de navegación -->
+      <ul class="nav__link nav__link--menu">
+        <li class="nav__item">
+          <a href="#inicio" class="nav__links">Inicio</a>
+        </li>
+        <li class="nav__item">
+          <a href="#nosotros" class="nav__links">Nosotros</a>
+        </li>
+        <li class="nav__item">
+          <a href="#productos" class="nav__links">Productos</a>
+        </li>
+        <li class="nav__item">
+          <a href="#shops" class="nav__links">Tiendas</a>
+        </li>
+        <li class="nav__item">
+          <a href="#contacto" class="nav__links">Contacto</a>
+        </li>
+      </ul>
+
+      <div class="nav__menu">
+        <img src="./img/menu.svg" class="nav__img" />
+      </div>
+    </nav>
+      <!-- Menú de tipo hamburguesa -->
+    <script src="./js/menuDesplegable.js"></script>
+
+      <!-- Sección principal. Presentación de la página -->
+    <section class="hero__container container">
+      <h1 class="hero__title">Crema de Whisky originaria de México</h1>
+      <p class="hero__paragraph">
+        Atrévete a seducir tus sentidos <br />
+        con Dolce Daniel's y haz de tus momentos algo inolvidable<br />
+      </p>
+      <a href="https://listado.mercadolibre.com.mx/_CustId_278666819" class="cta" target="_blank">Comprar ahora</a>
+    </section>
+  </header>
+  <main>
+    <section class="Nosotros" id="nosotros">
+      <h2 class="subtitle">¿Quiénes somos?</h2>
+      <div class="aboutUs">
+        <ul class="description">
+          <li class="icon">
+            <a href="#" class="aboutUs__icons"><img src="./img/alfiler.png" class="footer__img"></a>
+            <p class="icon__text">Completamente Mexicana</p>
           </li>
-          <li class="nav__item">
-            <a href="#" class="nav__links">Nosotros</a>
+          <li class="icon">
+            <a href="#" class="aboutUs__icons"><img src="./img/alfiler.png" class="footer__img"></a>
+            <p class="icon__text">Otro texto de cualidad</p>
           </li>
-          <li class="nav__item">
-            <a href="#productos" class="nav__links">Productos</a>
-          </li>
-          <li class="nav__item">
-            <a href="#shops" class="nav__links">Tiendas</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contacto" class="nav__links">Contacto</a>
+          <li class="icon">
+            <a href="#" class="aboutUs__icons"><img src="./img/alfiler.png" class="footer__img"></a>
+            <p class="icon__text">Otro texto de cualidad</p>
           </li>
         </ul>
-
-        <div class="nav__menu">
-          <img src="./img/menu.svg" class="nav__img" />
-        </div>
-      </nav>
-
-      <script src="./js/menuDesplegable.js"></script>
-
-      <section class="hero__container container">
-        <h1 class="hero__title">Crema de Whisky originaria de México</h1>
-        <p class="hero__paragraph">
-          Atrévete a seducir tus sentidos <br />
-          con Dolce Daniel's y haz de tus momentos algo inolvidable<br />
+        <p class="nosotros__paragraph">
+          Desde su fundación el 13 de agosto de 2013, <strong>Dolce Daniel's</strong> ha redefinido la industria con su visión audaz y sus
+          productos excepcionales. Lo que comenzó como una empresa de crema de mezcal ha evolucionado en un
+          verdadero fenómeno culinario. Nuestra pasión por crear experiencias únicas nos ha llevado más allá,
+          expandiéndonos a través de renombrados restaurantes a lo largo de la República y plataformas como Mercado Libre, donde compartimos
+          nuestro amor por los sabores auténticos con una comunidad cada vez mayor. A lo largo de los años, hemos tejido
+          una historia de excelencia que sigue evolucionando, invitando a todos a unirse a nuestro viaje de
+          descubrimiento y deleite.
         </p>
-        <a
-          href="https://listado.mercadolibre.com.mx/_CustId_278666819"
-          class="cta"
-          target="_blank"
-          >Comprar ahora</a
-        >
-      </section>
-    </header>
-    <main>
-      <section class="Nosotros">
-        <h2 class="subtitle">¿Quiénes somos?</h2>
-        <div class="aboutUs">
-        <p class="nosotros__paragraph">Somos una empresa 100% mexicana con presencia en # restaurantes alrededor
-          de toda la república mexicana.<br><br>Dolce Daniel's es un producto orgánico y natural elaborado a base 
-          de Whisky Escoces, furtas naturales y azúcar natural de maguey.<br><br>Lorem ipsum dolor sit amet consectetur 
-          adipisicing elit.
-        </p>
-        <img src="./img/licor.jpg" class="about__image">
       </div>
-      </section>
+    </section>
 
-      <section class="container products" id="productos">
-        <div class="productos products__hidden">
+      <!-- Sección de productos -->
+    <section class="container products" id="productos">
+      <div class="productos products__hidden">
         <h2 class="subtitle">Nuestros Productos</h2>
         <h3 class="subtitle2">Dolce Daniel's Cremas de Whisky</h3>
+        <p class="nosotros__paragraph">
+          
+        </p>
 
         <div class="products__cremas">
           <article class="products__images">
             <img src="img/crema_cafe.jpg" class="product__image" />
             <h4 class="product__title">Crema Café Chocolate</h4>
             <p class="product__paragraph">750 ml</p>
-            <a
-              href="https://articulo.mercadolibre.com.mx/MLM-1331151623-dolce-daniels-crema-cafe-chocolate-_JM#position=3&search_layout=stack&type=item&tracking_id=f41312ec-1b57-4aed-a932-09168d2bff0b"
-              class="cta2"
-              target="_blank"
-              >Comprar ahora</a
-            >
+            <a href="https://articulo.mercadolibre.com.mx/MLM-1331151623-dolce-daniels-crema-cafe-chocolate-_JM#position=3&search_layout=stack&type=item&tracking_id=f41312ec-1b57-4aed-a932-09168d2bff0b"
+              class="cta2" target="_blank">Comprar ahora</a>
           </article>
 
           <article class="products__images">
             <img src="img/crema_piña.jpg" class="product__image" />
             <h4 class="product__title">Crema Piña Coco</h4>
             <p class="product__paragraph">750 ml</p>
-            <a
-              href="https://articulo.mercadolibre.com.mx/MLM-1331219773-dolce-daniels-crema-coco-pina-_JM#position=4&search_layout=stack&type=item&tracking_id=b4fd8920-00ff-49fa-bc16-3aea1721e499"
-              class="cta2"
-              target="_blank"
-              >Comprar ahora</a
-            >
+            <a href="https://articulo.mercadolibre.com.mx/MLM-1331219773-dolce-daniels-crema-coco-pina-_JM#position=4&search_layout=stack&type=item&tracking_id=b4fd8920-00ff-49fa-bc16-3aea1721e499"
+              class="cta2" target="_blank">Comprar ahora</a>
           </article>
 
           <article class="products__images">
             <img src="img/crema_piñon.jpg" class="product__image" />
             <h4 class="product__title">Crema Piñón Fresa</h4>
             <p class="product__paragraph">750 ml</p>
-            <a
-              href="https://articulo.mercadolibre.com.mx/MLM-1331164798-dolce-daniels-crema-pinon-fresa-_JM#position=18&search_layout=stack&type=item&tracking_id=f1288e53-5078-4d8c-b86b-5dc5b359f054"
-              class="cta2"
-              target="_blank"
-              >Comprar ahora</a
-            >
+            <a href="https://articulo.mercadolibre.com.mx/MLM-1331164798-dolce-daniels-crema-pinon-fresa-_JM#position=18&search_layout=stack&type=item&tracking_id=f1288e53-5078-4d8c-b86b-5dc5b359f054"
+              class="cta2" target="_blank">Comprar ahora</a>
           </article>
 
           <article class="products__images">
             <img src="img/crema_pack.jpg" class="product__image" />
             <h4 class="product__title">Dolce Daniel's 1 pack</h4>
             <p class="product__paragraph">750 ml c/u</p>
-            <a
-              href="https://articulo.mercadolibre.com.mx/MLM-1882440199-dolce-daniels-1-pack-3b-coco-pinon-cafe-_JM#position=4&search_layout=stack&type=item&tracking_id=658e6f88-ac5d-47fc-ba33-13e5cde832e8"
-              class="cta2"
-              target="_blank"
-              >Comprar ahora</a
-            >
+            <a href="https://articulo.mercadolibre.com.mx/MLM-1882440199-dolce-daniels-1-pack-3b-coco-pinon-cafe-_JM#position=4&search_layout=stack&type=item&tracking_id=658e6f88-ac5d-47fc-ba33-13e5cde832e8"
+              class="cta2" target="_blank">Comprar ahora</a>
           </article>
 
         </div>
@@ -130,34 +141,22 @@
             <img src="img/jugo_arandano.jpg" class="product__image" />
             <h4 class="product__title">Dolce Daniel's Arándano</h4>
             <p class="product__paragraph">750 ml</p>
-            <a
-              href="https://articulo.mercadolibre.com.mx/MLM-1331152772-dolce-daniels-arandano-_JM#position=19&search_layout=stack&type=item&tracking_id=1444aad9-5d2c-4207-a28f-0c4914d73708"
-              class="cta2"
-              target="_blank"
-              >Comprar ahora</a
-            >
+            <a href="https://articulo.mercadolibre.com.mx/MLM-1331152772-dolce-daniels-arandano-_JM#position=19&search_layout=stack&type=item&tracking_id=1444aad9-5d2c-4207-a28f-0c4914d73708"
+              class="cta2" target="_blank">Comprar ahora</a>
           </article>
           <article class="products__images">
             <img src="img/jugo_maracuya.jpg" class="product__image" />
             <h4 class="product__title">Dolce Daniel's Maracuyá</h4>
             <p class="product__paragraph">750 ml</p>
-            <a
-              href="https://articulo.mercadolibre.com.mx/MLM-2089470444-dolce-daniels-maracuya-_JM#position=1&search_layout=stack&type=item&tracking_id=493218f5-1fc5-450b-93c2-64f9f9ccbd94"
-              class="cta2"
-              target="_blank"
-              >Comprar ahora</a
-            >
+            <a href="https://articulo.mercadolibre.com.mx/MLM-2089470444-dolce-daniels-maracuya-_JM#position=1&search_layout=stack&type=item&tracking_id=493218f5-1fc5-450b-93c2-64f9f9ccbd94"
+              class="cta2" target="_blank">Comprar ahora</a>
           </article>
           <article class="products__images">
             <img src="img/jugo_moras.jpg" class="product__image" />
             <h4 class="product__title">Dolce Daniel's Moras</h4>
             <p class="product__paragraph">750 ml</p>
-            <a
-              href="https://articulo.mercadolibre.com.mx/MLM-1331165174-dolce-daniels-moras-_JM#position=5&search_layout=stack&type=item&tracking_id=d1f35da0-f4fc-4f8d-b4c4-7b7630bc9a02"
-              class="cta2"
-              target="_blank"
-              >Comprar ahora</a
-            >
+            <a href="https://articulo.mercadolibre.com.mx/MLM-1331165174-dolce-daniels-moras-_JM#position=5&search_layout=stack&type=item&tracking_id=d1f35da0-f4fc-4f8d-b4c4-7b7630bc9a02"
+              class="cta2" target="_blank">Comprar ahora</a>
           </article>
         </div>
 
@@ -167,68 +166,43 @@
             <img src="img/pouch_cafe_500.jpg" class="product__image" />
             <h4 class="product__title">Pouch Café & Chocolate</h4>
             <p class="product__paragraph">500 ml</p>
-            <a
-            href="https://articulo.mercadolibre.com.mx/MLM-2089903408-dolce-daniels-pouch-cafe-choco-500ml-_JM#position=13&search_layout=stack&type=item&tracking_id=47de58c6-6cd3-4abc-aac1-026da6f0b189"
-              class="cta2"
-              target="_blank"
-              >Comprar ahora</a
-            >
+            <a href="https://articulo.mercadolibre.com.mx/MLM-2089903408-dolce-daniels-pouch-cafe-choco-500ml-_JM#position=13&search_layout=stack&type=item&tracking_id=47de58c6-6cd3-4abc-aac1-026da6f0b189"
+              class="cta2" target="_blank">Comprar ahora</a>
           </article>
           <article class="products__images">
             <img src="img/pouch_piña_500.jpg" class="product__image" />
             <h4 class="product__title">Pouch Coco & Piña</h4>
             <p class="product__paragraph">500 ml</p>
-            <a
-            href="https://articulo.mercadolibre.com.mx/MLM-1882547093-dolce-daniels-pouch-coco-pina-500ml-_JM#position=15&search_layout=stack&type=item&tracking_id=312aa712-036f-49e9-828b-6165d59cb1d3"
-              class="cta2"
-              target="_blank"
-              >Comprar ahora</a
-            >
+            <a href="https://articulo.mercadolibre.com.mx/MLM-1882547093-dolce-daniels-pouch-coco-pina-500ml-_JM#position=15&search_layout=stack&type=item&tracking_id=312aa712-036f-49e9-828b-6165d59cb1d3"
+              class="cta2" target="_blank">Comprar ahora</a>
           </article>
           <article class="products__images">
             <img src="img/pouch_piñon_500.jpg" class="product__image" />
             <h4 class="product__title">Pouch Fresa & Piñón</h4>
             <p class="product__paragraph">500 ml</p>
-            <a
-            href="https://articulo.mercadolibre.com.mx/MLM-2089903818-dolce-daniels-pouch-pinon-fresa-500ml-_JM#position=6&search_layout=stack&type=item&tracking_id=27564476-c8c7-436c-b0cb-6df220047d08"
-              class="cta2"
-              target="_blank"
-              >Comprar ahora</a
-            >
+            <a href="https://articulo.mercadolibre.com.mx/MLM-2089903818-dolce-daniels-pouch-pinon-fresa-500ml-_JM#position=6&search_layout=stack&type=item&tracking_id=27564476-c8c7-436c-b0cb-6df220047d08"
+              class="cta2" target="_blank">Comprar ahora</a>
           </article>
           <article class="products__images">
             <img src="img/pouch_arandano_500.jpg" class="product__image" />
             <h4 class="product__title">Pouch Arándano</h4>
             <p class="product__paragraph">500 ml</p>
-            <a
-            href="https://articulo.mercadolibre.com.mx/MLM-2090056020-dolce-daniels-pouch-arandano-500ml-_JM#position=7&search_layout=stack&type=item&tracking_id=8c514031-cbb5-4380-b6cd-ec82fc129be8"
-              class="cta2"
-              target="_blank"
-              >Comprar ahora</a
-            >
+            <a href="https://articulo.mercadolibre.com.mx/MLM-2090056020-dolce-daniels-pouch-arandano-500ml-_JM#position=7&search_layout=stack&type=item&tracking_id=8c514031-cbb5-4380-b6cd-ec82fc129be8"
+              class="cta2" target="_blank">Comprar ahora</a>
           </article>
           <article class="products__images">
             <img src="img/pouch_maracuya_500.jpg" class="product__image" />
             <h4 class="product__title">Pouch Maracuyá</h4>
             <p class="product__paragraph">500 ml</p>
-            <a
-            href="https://articulo.mercadolibre.com.mx/MLM-1882482311-dolce-daniels-pouch-maracuya-500ml-_JM#position=14&search_layout=stack&type=item&tracking_id=cdceb121-d5a9-4cc7-bb17-eee82418539f"
-              class="cta2"
-              target="_blank"
-              >Comprar ahora</a
-            >
+            <a href="https://articulo.mercadolibre.com.mx/MLM-1882482311-dolce-daniels-pouch-maracuya-500ml-_JM#position=14&search_layout=stack&type=item&tracking_id=cdceb121-d5a9-4cc7-bb17-eee82418539f"
+              class="cta2" target="_blank">Comprar ahora</a>
           </article>
           <article class="products__images">
             <img src="img/pouch_moras_500.jpg" class="product__image" />
             <h4 class="product__title">Pouch Moras</h4>
             <p class="product__paragraph">500 ml</p>
-            <a
-            href="https://articulo.mercadolibre.com.mx/MLM-1882545179-dolce-daniels-pouch-moras-500ml-_JM#position=9&search_layout=stack&type=item&tracking_id=a87a7f0e-768d-4d81-986c-cb7bea369be4"
-
-              class="cta2"
-              target="_blank"
-              >Comprar ahora</a
-            >
+            <a href="https://articulo.mercadolibre.com.mx/MLM-1882545179-dolce-daniels-pouch-moras-500ml-_JM#position=9&search_layout=stack&type=item&tracking_id=a87a7f0e-768d-4d81-986c-cb7bea369be4"
+              class="cta2" target="_blank">Comprar ahora</a>
           </article>
 
           <!--Aquí comienzan los productos pouch de 250 ml-->
@@ -237,80 +211,61 @@
             <img src="img/pouch_cafe_250.jpg" class="product__image" />
             <h4 class="product__title">Pouch Café & Chocolate</h4>
             <p class="product__paragraph">250 ml</p>
-            <a
-            href="https://articulo.mercadolibre.com.mx/MLM-1882543537-dolce-daniels-pouch-cafe-choco-250ml-_JM#position=11&search_layout=stack&type=item&tracking_id=ac89db66-d784-403c-be15-63061bd64344"
-              class="cta2"
-              target="_blank"
-              >Comprar ahora</a
-            >
+            <a href="https://articulo.mercadolibre.com.mx/MLM-1882543537-dolce-daniels-pouch-cafe-choco-250ml-_JM#position=11&search_layout=stack&type=item&tracking_id=ac89db66-d784-403c-be15-63061bd64344"
+              class="cta2" target="_blank">Comprar ahora</a>
           </article>
           <article class="products__images">
             <img src="img/pouch_piña_250.jpg" class="product__image" />
             <h4 class="product__title">Pouch Coco & Piña</h4>
             <p class="product__paragraph">250 ml</p>
-            <a
-            href="https://articulo.mercadolibre.com.mx/MLM-2089876024-dolce-daniels-pouch-coco-pina-250ml-_JM#position=12&search_layout=stack&type=item&tracking_id=856d702b-1679-4baa-87e4-3b252e408522"              class="cta2"
-              target="_blank"
-              >Comprar ahora</a
-            >
+            <a href="https://articulo.mercadolibre.com.mx/MLM-2089876024-dolce-daniels-pouch-coco-pina-250ml-_JM#position=12&search_layout=stack&type=item&tracking_id=856d702b-1679-4baa-87e4-3b252e408522"
+              class="cta2" target="_blank">Comprar ahora</a>
           </article>
           <article class="products__images">
             <img src="img/pouch_piñon_250.jpg" class="product__image" />
             <h4 class="product__title">Pouch Fresa & Piñón</h4>
             <p class="product__paragraph">250 ml</p>
-            <a
-            href="https://articulo.mercadolibre.com.mx/MLM-1882521517-dolce-daniels-pouch-pinon-fresa-250ml-_JM#position=10&search_layout=stack&type=item&tracking_id=b9c4c896-f6bc-420a-959b-79e60aa1b7ec"              class="cta2"
-              target="_blank"
-              >Comprar ahora</a
-            >
+            <a href="https://articulo.mercadolibre.com.mx/MLM-1882521517-dolce-daniels-pouch-pinon-fresa-250ml-_JM#position=10&search_layout=stack&type=item&tracking_id=b9c4c896-f6bc-420a-959b-79e60aa1b7ec"
+              class="cta2" target="_blank">Comprar ahora</a>
           </article>
           <article class="products__images">
             <img src="img/pouch_arandano_250.jpg" class="product__image" />
             <h4 class="product__title">Pouch Arándano</h4>
             <p class="product__paragraph">250 ml</p>
-            <a
-            href="https://articulo.mercadolibre.com.mx/MLM-2089900700-dolce-daniels-pouch-arandano-250ml-_JM#position=16&search_layout=stack&type=item&tracking_id=64b22050-3fd5-4d93-837d-7a2020513bfc"              class="cta2"
-              target="_blank"
-              >Comprar ahora</a
-            >
+            <a href="https://articulo.mercadolibre.com.mx/MLM-2089900700-dolce-daniels-pouch-arandano-250ml-_JM#position=16&search_layout=stack&type=item&tracking_id=64b22050-3fd5-4d93-837d-7a2020513bfc"
+              class="cta2" target="_blank">Comprar ahora</a>
           </article>
           <article class="products__images">
             <img src="img/pouch_maracuya_250.jpg" class="product__image" />
             <h4 class="product__title">Pouch Maracuyá</h4>
             <p class="product__paragraph">250 ml</p>
-            <a
-            href="https://articulo.mercadolibre.com.mx/MLM-1882518647-dolce-daniels-pouch-maracuya-250ml-_JM#position=8&search_layout=stack&type=item&tracking_id=5d394675-906f-4007-9a04-9b9bd42951ae"
-            class="cta2"
-              target="_blank"
-              >Comprar ahora</a
-            >
+            <a href="https://articulo.mercadolibre.com.mx/MLM-1882518647-dolce-daniels-pouch-maracuya-250ml-_JM#position=8&search_layout=stack&type=item&tracking_id=5d394675-906f-4007-9a04-9b9bd42951ae"
+              class="cta2" target="_blank">Comprar ahora</a>
           </article>
           <article class="products__images">
             <img src="img/pouch_moras_250.jpg" class="product__image" />
             <h4 class="product__title">Pouch Moras</h4>
             <p class="product__paragraph">250 ml</p>
-            <a
-            href="https://articulo.mercadolibre.com.mx/MLM-1882501919-dolce-daniels-pouch-mora-250ml-_JM#position=17&search_layout=stack&type=item&tracking_id=9de1c452-2390-4ae2-b2f0-77016dfcda3b"
-            class="cta2"
-              target="_blank"
-              >Comprar ahora</a
-            >
+            <a href="https://articulo.mercadolibre.com.mx/MLM-1882501919-dolce-daniels-pouch-mora-250ml-_JM#position=17&search_layout=stack&type=item&tracking_id=9de1c452-2390-4ae2-b2f0-77016dfcda3b"
+              class="cta2" target="_blank">Comprar ahora</a>
           </article>
         </div>
       </div>
-      </section>
+    </section>
 
-      <section class="container shops" id="shops">
-        <h2 class="subtitle">Encuentranos en: </h2>
-        <div class="shops__main container">
+      <!-- Compendio de tiendas -->
 
-          <section class="shops__body shops__show" data-id="1">
-            <div class="shops__images">
-              <img src="img/barberiaChalco_logo.png" class="shops__image"/>
-            </div>
-          </section>
+    <section class="container shops" id="shops">
+      <h2 class="subtitle">Encuentranos en: </h2>
+      <div class="shops__main container">
 
-          <section class="shops__body" data-id="2">
+        <section class="shops__body shops__show" data-id="1">
+          <div class="shops__images">
+            <img src="img/barberiaChalco_logo.png" class="shops__image" />
+          </div>
+        </section>
+
+        <section class="shops__body" data-id="2">
           <div class="shops__images">
             <img src="img/bonApetit_logo.png" class="shops__image" />
           </div>
@@ -348,7 +303,7 @@
 
         <section class="shops__body shops__show" data-id="3">
           <div class="shops__images">
-            <img src="img/mercadoLibre_logo.png" class="shops__image" id="mc_image"/>
+            <img src="img/mercadoLibre_logo.png" class="shops__image" id="mc_image" />
           </div>
         </section>
 
@@ -394,48 +349,57 @@
           </div>
         </section>
 
-        </div>
-      </section>
-    </main>
-    
-    <footer class="footer" id="contacto">
-      <section class="footer__container container">
-        <nav class="nav nav--footer">
-          <h2 class="footer__title">Dolce Daniel's</h2>
-          <ul class="nav__link nav__link--footer">
-            <li class="nav__item">
-              <a href="#inicio" class="nav__links__footer">Inicio</a>
-            </li>
-            <li class="nav__item">
-              <a href="#products" class="nav__links__footer">Productos</a>
-            </li>
-            <li class="nav__item">
-              <a href="#shops" class="nav__links__footer">Tiendas</a>
-            </li>
-            <li class="nav__item">
-              <a href="#contacto" class="nav__links__footer">Contacto</a>
-            </li>
-        </nav>
+      </div>
+    </section>
+  </main>
 
+    <!-- Script para comunicarse via whatsapp -->
+
+  <script src="./js/mensajeWhatsapp.js"></script>
+
+  <footer class="footer" id="contacto">
+    <section class="footer__container container">
+      <nav class="nav nav--footer">
+        <h2 class="footer__title">Dolce Daniel's</h2>
+        <ul class="nav__link nav__link--footer">
+          <li class="nav__item">
+            <a href="#inicio" class="nav__links__footer">Inicio</a>
+          </li>
+          <li class="nav__item">
+            <a href="#products" class="nav__links__footer">Productos</a>
+          </li>
+          <li class="nav__item">
+            <a href="#nosotros" class="nav__links__footer">Nosotros</a>
+          </li>
+          <li class="nav__item">
+            <a href="#shops" class="nav__links__footer">Tiendas</a>
+          </li>
+      </nav>
+
+      <div class="footer_escribenos">
         <form class="footer__form">
-          <h2 class="footer__contacto">Escríbenos</h2>
+          <h3 class="footer__contacto">Escríbenos</h3>
           <div class="footer__inputs">
-            <input type="text" placeholder="Mensaje:" class="footer__input">
-            <input type="submit" value="Enviar" class="footer__submit">
+            <textarea class="footer__input" id="mensajeInput"></textarea>
+            <input type="submit" value="Enviar" class="footer__submit" id="enviarButton">
           </div>
         </form>
-      </section>
-
-      <section class="footer__copy container">
-        <div class="footer__social">
-            <a href="https://www.facebook.com/DOLCEDANIELS28" class="footer__icons"><img src="./img/facebook.svg" class="footer__img"></a>
-            <a href="#" class="footer__icons"><img src="./img/instagram.svg" class="footer__img"></a>
-            <a href="https://listado.mercadolibre.com.mx/_CustId_278666819" class="footer__icons"><img src="./img/ml.svg" class="footer__img"></a>
-        </div>
-
-        <h3 class="footer__copyright">Derechos reservados &copy; Dolce Daniel's</h3>
+      </div>
     </section>
 
-    </footer>
-  </body>
+    <section class="footer__copy container">
+      <div class="footer__social">
+        <a href="https://www.facebook.com/DOLCEDANIELS28" target="_blank" class="footer__icons"><img src="./img/facebook.svg"
+            class="footer__img"></a>
+        <a href="#" class="footer__icons"><img src="./img/instagram.svg" target="_blank" class="footer__img"></a>
+        <a href="https://listado.mercadolibre.com.mx/_CustId_278666819" target="_blank" class="footer__icons"><img src="./img/ml.svg"
+            class="footer__img"></a>
+      </div>
+
+      <h3 class="footer__copyright">Derechos reservados &copy; Dolce Daniel's</h3>
+    </section>
+
+  </footer>
+</body>
+
 </html>
