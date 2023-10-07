@@ -19,6 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Redirige a WhatsApp después de 1.5 segundos (
     setTimeout(function() {
       window.open(enlaceWhatsApp, '_blank');
-    }, 1500);
+    }, 1000);
   });
 });
